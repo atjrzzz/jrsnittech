@@ -1,31 +1,31 @@
 // Dark Mode Toggle
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-const body = document.body;
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+}
 
-darkModeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  if (body.classList.contains('dark-mode')) {
-    darkModeToggle.textContent = 'Toggle Light Mode';
-  } else {
-    darkModeToggle.textContent = 'Toggle Dark Mode';
-  }
-});
-
-// Hamburger Menu Toggle
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
-
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
-
-// Smooth Scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-    navLinks.classList.remove('active'); // Close menu after clicking a link
+// Intersection Observer to trigger fade-in animations when sections come into view
+const sections = document.querySelectorAll('section');
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
   });
+}, { threshold: 0.5 });
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+
+// Contact Form Submission
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  alert(`Message Sent!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+  
+  // Reset form
+  document.getElementById('contact-form').reset();
 });
