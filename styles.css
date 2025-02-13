@@ -1,4 +1,4 @@
-/* Resetting some defaults */
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,183 +6,142 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  transition: background-color 0.3s, color 0.3s;
-  padding: 0;
-  margin: 0;
-  background-color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f9ff;
   color: #333;
 }
 
-header {
-  background-color: #007BFF; /* Blue background */
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-header .logo {
+/* Header Section */
+.header {
+  background: #0074d9;
   color: #fff;
-  font-size: 1.8rem;
-  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
 }
 
-nav ul {
-  display: flex;
-  list-style-type: none;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-button.toggle-dark-mode {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* Section Styles */
-section {
-  padding: 50px 20px;
-  margin: 20px 0;
-  opacity: 0;
-  transform: translateY(50px);
-  animation: fadeIn 1s ease-out forwards;
-}
-
-section h1 {
+.header h1 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #007BFF; /* Blue text for headings */
 }
 
-section p,
-section ul {
+.header p {
   font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-section ul {
-  list-style-type: none;
-}
-
-section li {
-  margin-bottom: 10px;
-}
-
-section i {
-  margin-right: 10px;
-  color: #007BFF; /* Blue icons */
-}
-
-/* Contact Form */
-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-form input,
-form textarea {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #007BFF; /* Blue border */
-  border-radius: 5px;
   margin-bottom: 15px;
 }
 
-form button {
-  padding: 12px 20px;
-  font-size: 1.1rem;
-  background-color: #007BFF; /* Blue background */
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+.contact-info p {
+  margin: 5px 0;
 }
 
-form button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+/* Sections */
+section {
+  margin: 20px 0;
+}
+
+section h2 {
+  color: #0074d9;
+  margin-bottom: 15px;
+}
+
+section p, section ul {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.job {
+  margin-bottom: 20px;
 }
 
 /* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #007BFF; /* Blue background */
+.footer {
+  background: #0074d9;
   color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
 }
 
-/* Dark Mode */
-.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+/* Side Navigation */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0074d9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.dark-mode header {
-  background-color: #0056b3; /* Darker blue in dark mode */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
 }
 
-.dark-mode section {
-  background-color: #333;
+.sidenav a:hover {
+  color: #f4f9ff;
+  background-color: #0056b3;
 }
 
-.dark-mode button.toggle-dark-mode {
-  color: #e0e0e0;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-/* Fade-In Animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #0074d9;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  border-radius: 5px;
 }
 
-/* Adjust Section Animations */
-#summary {
-  animation-delay: 0.3s;
-}
-#experience {
-  animation-delay: 0.6s;
-}
-#skills {
-  animation-delay: 0.9s;
-}
-#education {
-  animation-delay: 1.2s;
-}
-#contact {
-  animation-delay: 1.5s;
+.openbtn:hover {
+  background-color: #0056b3;
 }
 
-/* Media Queries for Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  nav ul {
-    flex-direction: column;
-    margin-top: 10px;
+  .header h1 {
+    font-size: 1.5rem;
   }
 
-  nav ul li {
-    margin: 10px 0;
+  .header p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p, section ul {
+    font-size: 0.9rem;
   }
 }
