@@ -1,0 +1,132 @@
+/* styles.css */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --header-bg: #007bff;
+    --header-text: #ffffff;
+    --section-bg: #f8f9fa;
+    --section-border: #dddddd;
+    --sidebar-bg: #1a1a1a;
+    --sidebar-text: #ffffff;
+    --sidebar-width: 250px;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --header-bg: #1a1a1a;
+    --header-text: #ffffff;
+    --section-bg: #1e1e1e;
+    --section-border: #333333;
+    --sidebar-bg: #000000;
+    --sidebar-text: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidebar by default */
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#sidebar.active {
+    left: 0; /* Show sidebar */
+}
+
+#sidebar-toggle {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: -40px;
+    top: 10px;
+}
+
+#sidebar nav ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+#sidebar nav ul li {
+    margin: 15px 0;
+}
+
+#sidebar nav ul li a {
+    color: var(--sidebar-text);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Main Content Styles */
+main {
+    margin-left: 0;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+main.shift {
+    margin-left: var(--sidebar-width); /* Shift content when sidebar is open */
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: var(--section-bg);
+    border: 1px solid var(--section-border);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
