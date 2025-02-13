@@ -1,188 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jerson Jemenez - IT Professional specializing in technical support, network management, and live streaming.">
-  <meta name="keywords" content="IT professional, technical support, network management, live streaming">
-  <meta name="author" content="Jerson Jemenez">
-  <title>Jerson Jemenez - IT Professional</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT Professional Portfolio - Technical Support, Networking, CCTV, Live Streaming">
+    <title>Jerson Jemenez - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
 </head>
 <body>
-  <!-- Loading Animation -->
-  <div id="loading">
-    <div class="spinner"></div>
-  </div>
 
-  <!-- Dark Mode Toggle -->
-  <button id="darkModeToggle" onclick="toggleDarkMode()">🌙</button>
+    <!-- LOADING ANIMATION -->
+    <div id="preloader"></div>
 
-  <!-- Side Navigation -->
-  <div id="sideNav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#summary">Summary</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
-  </div>
+    <!-- NAVIGATION -->
+    <header>
+        <h1>Jerson Jemenez</h1>
+        <button id="darkModeToggle">🌙</button>
+    </header>
 
-  <!-- Open Button -->
-  <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>IT Professional & Technical Support</h2>
+        <p>Expert in Networking, CCTV Installation, Live Streaming, and IT Solutions</p>
+        <a href="#contact" class="cta-button">Contact Me</a>
+    </section>
 
-  <!-- Header with Parallax Effect -->
-  <header class="header parallax">
-    <div class="container">
-      <h1>Jerson Jemenez</h1>
-      <p>IT Professional | Technical Support & Network Management</p>
-      <div class="contact-info">
-        <p><strong>Email:</strong> jemenezjerson@gmail.com</p>
-        <p><strong>Phone:</strong> 09484577044</p>
-        <p><strong>Location:</strong> Naga City</p>
-      </div>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-  </header>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Detail-oriented IT Professional with 2+ years of hands-on experience in technical support, network diagnostics, and live streaming operations.</p>
+    </section>
 
-  <section id="summary" class="summary animated-section">
-    <div class="container">
-      <h2>Summary</h2>
-      <p>Detail-oriented IT Professional with 2+ years of hands-on experience in technical support, network diagnostics, and live streaming operations. Adept at resolving complex technical issues, optimizing system performance, and delivering high-quality IT solutions. Proven expertise in CCTV installation, network upgrades, and live event streaming. Committed to continuous learning and leveraging cutting-edge technology to drive organizational efficiency.</p>
-    </div>
-  </section>
-
-  <section id="experience" class="experience animated-section">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="job">
-        <h3>IT / Technical Staff</h3>
-        <p><strong>Provincial Government of Camarines Sur • Pili, Camarines Sur</strong></p>
-        <p><em>January 2022 - Present</em></p>
-        <ul>
-          <li>Provided IT support, resolving hardware/software issues and reducing downtime through proactive diagnostics.</li>
-          <li>Performed network upgrades, including Starlink and Converge Fiber Internet installations, enhancing connectivity for government offices.</li>
-          <li>Designed and installed CCTV systems across Camarines Sur Hospital and School, improving surveillance coverage through strategic site surveys and optimal camera placement.</li>
-          <li>Managed live streaming for public events using OBS, ensuring seamless 1080p transmission to audiences.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="skills animated-section">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skill">
-        <p>Network Configuration and Management</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 90%;"></div>
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+            <p>Network Configuration</p>
+            <div class="progress"><span style="width: 90%"></span></div>
         </div>
-      </div>
-      <div class="skill">
-        <p>Software Support (e.g., Microsoft Office)</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 85%;"></div>
+        <div class="skill">
+            <p>Live Streaming & Broadcast</p>
+            <div class="progress"><span style="width: 85%"></span></div>
         </div>
-      </div>
-      <div class="skill">
-        <p>Live Streaming Setup and Operation</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 80%;"></div>
+        <div class="skill">
+            <p>CCTV Installation & Security</p>
+            <div class="progress"><span style="width: 80%"></span></div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects" class="projects animated-section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Live Streaming Setup for Public Events</h3>
-        <p>Managed live streaming using OBS, ensuring seamless 1080p transmission.</p>
-      </div>
-    </div>
-  </section>
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="assets/images/project1.jpg" alt="CCTV Installation">
+                <h3>CCTV Installation</h3>
+                <p>Implemented security surveillance systems across hospitals and schools.</p>
+            </div>
+            <div class="project">
+                <img src="assets/images/project2.jpg" alt="Live Streaming Setup">
+                <h3>Live Streaming</h3>
+                <p>Managed 1080p live streams for government events using OBS.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="testimonials" class="testimonials animated-section">
-    <div class="container">
-      <h2>Testimonials</h2>
-      <div class="testimonial">
-        <p>"Jerson is an exceptional IT professional who consistently delivers high-quality solutions."</p>
-        <p><strong>- John Doe, Manager</strong></p>
-      </div>
-    </div>
-  </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-  <section id="contact" class="contact animated-section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Jerson Jemenez | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+        <button id="scrollToTop">⬆</button>
+    </footer>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2023 Jerson Jemenez. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Scroll-to-Top Button -->
-  <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
-
-  <script>
-    // Loading Animation
-    window.addEventListener("load", () => {
-      document.getElementById("loading").style.display = "none";
-    });
-
-    // Dark Mode Toggle
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-
-    // Side Navigation
-    function openNav() {
-      document.getElementById("sideNav").style.width = "250px";
-    }
-
-    function closeNav() {
-      document.getElementById("sideNav").style.width = "0";
-    }
-
-    // Section Animations
-    document.addEventListener("scroll", () => {
-      const sections = document.querySelectorAll(".animated-section");
-      sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top;
-        if (sectionTop < window.innerHeight * 0.8) {
-          section.classList.add("animate");
-        }
-      });
-    });
-
-    // Scroll-to-Top Button
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_TRACKING_ID');
-  </script>
 </body>
 </html>
