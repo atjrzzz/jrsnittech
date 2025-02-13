@@ -3,24 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jerson Jemenez - IT Professional specializing in technical support, network management, and live streaming.">
+  <meta name="keywords" content="IT professional, technical support, network management, live streaming">
+  <meta name="author" content="Jerson Jemenez">
   <title>Jerson Jemenez - IT Professional</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <!-- Loading Animation -->
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle" onclick="toggleDarkMode()">🌙</button>
+
   <!-- Side Navigation -->
   <div id="sideNav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#summary">Summary</a>
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#certificates">Certificates</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
   </div>
 
   <!-- Open Button -->
   <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
 
-  <header class="header">
+  <!-- Header with Parallax Effect -->
+  <header class="header parallax">
     <div class="container">
       <h1>Jerson Jemenez</h1>
       <p>IT Professional | Technical Support & Network Management</p>
@@ -29,17 +43,21 @@
         <p><strong>Phone:</strong> 09484577044</p>
         <p><strong>Location:</strong> Naga City</p>
       </div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
     </div>
   </header>
 
-  <section id="summary" class="summary">
+  <section id="summary" class="summary animated-section">
     <div class="container">
       <h2>Summary</h2>
       <p>Detail-oriented IT Professional with 2+ years of hands-on experience in technical support, network diagnostics, and live streaming operations. Adept at resolving complex technical issues, optimizing system performance, and delivering high-quality IT solutions. Proven expertise in CCTV installation, network upgrades, and live event streaming. Committed to continuous learning and leveraging cutting-edge technology to drive organizational efficiency.</p>
     </div>
   </section>
 
-  <section id="experience" class="experience">
+  <section id="experience" class="experience animated-section">
     <div class="container">
       <h2>Experience</h2>
       <div class="job">
@@ -56,34 +74,59 @@
     </div>
   </section>
 
-  <section id="skills" class="skills">
+  <section id="skills" class="skills animated-section">
     <div class="container">
       <h2>Skills</h2>
-      <ul>
-        <li>Network Configuration and Management</li>
-        <li>Software Support (e.g., Microsoft Office)</li>
-        <li>Live Streaming Setup and Operation</li>
-        <li>Audio and Video Equipment Management</li>
-        <li>Broadcast Software Proficiency (OBS, Streamlabs, vMix)</li>
-        <li>Multicam Production</li>
-        <li>Technical Aptitude</li>
-      </ul>
+      <div class="skill">
+        <p>Network Configuration and Management</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <p>Software Support (e.g., Microsoft Office)</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <p>Live Streaming Setup and Operation</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="education" class="education">
+  <section id="projects" class="projects animated-section">
     <div class="container">
-      <h2>Education</h2>
-      <p><strong>Bachelor Degree in Computer Science</strong></p>
-      <p>Tanauan Institute • Batangas City, Tanauan City</p>
-      <p><em>March 2014</em></p>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Live Streaming Setup for Public Events</h3>
+        <p>Managed live streaming using OBS, ensuring seamless 1080p transmission.</p>
+      </div>
     </div>
   </section>
 
-  <section id="certificates" class="certificates">
+  <section id="testimonials" class="testimonials animated-section">
     <div class="container">
-      <h2>Certificates</h2>
-      <p>Computer Hardware Servicing NC 2 Passer</p>
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <p>"Jerson is an exceptional IT professional who consistently delivers high-quality solutions."</p>
+        <p><strong>- John Doe, Manager</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact animated-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
 
@@ -93,7 +136,21 @@
     </div>
   </footer>
 
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
   <script>
+    // Loading Animation
+    window.addEventListener("load", () => {
+      document.getElementById("loading").style.display = "none";
+    });
+
+    // Dark Mode Toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    // Side Navigation
     function openNav() {
       document.getElementById("sideNav").style.width = "250px";
     }
@@ -101,6 +158,31 @@
     function closeNav() {
       document.getElementById("sideNav").style.width = "0";
     }
+
+    // Section Animations
+    document.addEventListener("scroll", () => {
+      const sections = document.querySelectorAll(".animated-section");
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < window.innerHeight * 0.8) {
+          section.classList.add("animate");
+        }
+      });
+    });
+
+    // Scroll-to-Top Button
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_TRACKING_ID');
   </script>
 </body>
 </html>
