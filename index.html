@@ -3,101 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jerson Jemenez - Portfolio</title>
+  <title>Jerson Jemenez | IT Professional</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Navigation Menu -->
-  <nav>
-    <div class="container">
-      <h1 class="logo">Jerson Jemenez</h1>
-      <button id="menu-toggle">&#9776;</button> <!-- Hamburger Icon -->
-      <ul class="nav-links" id="nav-links">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Jerson Jemenez</div>
+    <nav>
+      <ul>
         <li><a href="#summary">Summary</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="dark-mode-toggle">Toggle Dark Mode</button>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <h2>Welcome to My Portfolio</h2>
-      <p>IT Professional | Technical Support | Live Streaming Expert</p>
-      <a href="#summary" class="btn">Learn More</a>
-    </div>
+    </nav>
+    <button class="toggle-dark-mode" onclick="toggleDarkMode()">🌙</button>
   </header>
 
   <!-- Summary Section -->
-  <section id="summary" class="section">
-    <div class="container">
-      <h2>Summary</h2>
-      <p>
-        Detail-oriented IT Professional with 2+ years of hands-on experience in technical support, network diagnostics, and live streaming operations. Adept at resolving complex technical issues, optimizing system performance, and delivering high-quality IT solutions. Proven expertise in CCTV installation, network upgrades, and live event streaming. Committed to continuous learning and leveraging cutting-edge technology to drive organizational efficiency.
-      </p>
-    </div>
+  <section id="summary" class="fade-in">
+    <h1>Summary</h1>
+    <p>Detail-oriented IT Professional with 2+ years of hands-on experience in technical support, network diagnostics, and live streaming operations. Adept at resolving complex technical issues, optimizing system performance, and delivering high-quality IT solutions. Proven expertise in CCTV installation, network upgrades, and live event streaming. Committed to continuous learning and leveraging cutting-edge technology to drive organizational efficiency.</p>
   </section>
 
   <!-- Experience Section -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>IT / Technical Staff</h3>
-        <p><strong>Provincial Government of Camarines Sur</strong> | Pili, Camarines Sur</p>
-        <p><em>01/2022 - Present</em></p>
-        <ul>
-          <li>Technical Support & Network Management: IT support, resolving hardware/software issues and reducing downtime through proactive diagnostics. Network upgrades, including Starlink and Converge Fiber Internet installations, enhancing connectivity for government offices.</li>
-          <li>CCTV Systems & Security: Designed and installed CCTV systems across Camarines Sur Hospital and School, improving surveillance coverage through strategic site surveys and optimal camera placement. Performing routine maintenance and troubleshooting on cameras, cabling, and monitoring tools.</li>
-          <li>Live Streaming & Event Coordination: Managed live streaming for public events using OBS, ensuring seamless 1080p transmission to audiences. Collaborated with event organizers to set up multicam production setups, resolving technical issues in real-time to maintain broadcast quality.</li>
-        </ul>
-      </div>
+  <section id="experience" class="fade-in">
+    <h1>Experience</h1>
+    <div class="job">
+      <h2>IT / Technical Staff</h2>
+      <p>Provincial Government of Camarines Sur - Pili, Camarines Sur</p>
+      <p>01/2022 - Present</p>
+      <ul>
+        <li><i class="fas fa-wrench"></i> Technical Support & Network Management: IT support, resolving hardware/software issues, and reducing downtime.</li>
+        <li><i class="fas fa-camera"></i> CCTV Systems & Security: Designed and installed CCTV systems across Camarines Sur Hospital and Schools.</li>
+        <li><i class="fas fa-video"></i> Live Streaming & Event Coordination: Managed live streaming for public events with OBS, multicam setups, and real-time troubleshooting.</li>
+      </ul>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Network Configuration and Management</li>
-        <li>Software Support (e.g., Microsoft Office)</li>
-        <li>Live Streaming Setup and Operation</li>
-        <li>Audio and Video Equipment Management</li>
-        <li>Broadcast Software Proficiency (OBS, Streamlabs, vMix)</li>
-        <li>Multicam Production</li>
-        <li>Technical Aptitude</li>
-      </ul>
-    </div>
+  <section id="skills" class="fade-in">
+    <h1>Skills</h1>
+    <ul>
+      <li><i class="fas fa-network-wired"></i> Network Configuration and Management</li>
+      <li><i class="fas fa-laptop-code"></i> Software Support (e.g., Microsoft Office)</li>
+      <li><i class="fas fa-tv"></i> Live Streaming Setup and Operation</li>
+      <li><i class="fas fa-headphones-alt"></i> Audio and Video Equipment Management</li>
+      <li><i class="fas fa-tv"></i> Broadcast Software Proficiency (OBS, Streamlabs, vMix)</li>
+      <li><i class="fas fa-cogs"></i> Multicam Production</li>
+      <li><i class="fas fa-tools"></i> Technical Aptitude</li>
+    </ul>
   </section>
 
   <!-- Education Section -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2>Education</h2>
-      <p><strong>Bachelor Degree in Computer Science</strong></p>
-      <p>Tanauan Institute | Batangas City, Tanauan City</p>
-      <p><em>03/2014</em></p>
-    </div>
+  <section id="education" class="fade-in">
+    <h1>Education</h1>
+    <p>Bachelor Degree in Computer Science - Tanauan Institute, Batangas City (03/2014)</p>
   </section>
 
-  <!-- Certificates Section -->
-  <section id="certificates" class="section">
-    <div class="container">
-      <h2>Certificates</h2>
-      <p>Computer Hardware Servicing NC 2 passer</p>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+    <h1>Contact</h1>
+    <p>Email: jemenezjerson@gmail.com</p>
+    <p>Phone: 09484577044</p>
+    <p>Location: Naga City</p>
+
+    <!-- Contact Form -->
+    <form id="contact-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" required placeholder="Write your message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>Contact: jemenezjerson@gmail.com | 09484577044 | Naga City</p>
-    </div>
+    <p>&copy; 2025 Jerson Jemenez | Designed with ♥</p>
   </footer>
 
   <script src="script.js"></script>
