@@ -1,18 +1,22 @@
-// script.js
-const sidebar = document.getElementById('sidebar');
-const sidebarToggle = document.getElementById('sidebar-toggle');
-const mainContent = document.querySelector('main');
-const themeToggle = document.getElementById('theme-toggle');
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('dark-mode-toggle');
 const body = document.body;
 
-// Sidebar Toggle
-sidebarToggle.addEventListener('click', () => {
-    sidebar.classList.toggle('active');
-    mainContent.classList.toggle('shift');
+darkModeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  if (body.classList.contains('dark-mode')) {
+    darkModeToggle.textContent = 'Toggle Light Mode';
+  } else {
+    darkModeToggle.textContent = 'Toggle Dark Mode';
+  }
 });
 
-// Dark Mode Toggle
-themeToggle.addEventListener('click', () => {
-    body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
-    themeToggle.textContent = body.dataset.theme === 'dark' ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
