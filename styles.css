@@ -11,10 +11,11 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff;
+  color: #333;
 }
 
 header {
-  background-color: #333;
+  background-color: #007BFF; /* Blue background */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -50,6 +51,7 @@ button.toggle-dark-mode {
   cursor: pointer;
 }
 
+/* Section Styles */
 section {
   padding: 50px 20px;
   margin: 20px 0;
@@ -61,6 +63,7 @@ section {
 section h1 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: #007BFF; /* Blue text for headings */
 }
 
 section p,
@@ -79,8 +82,10 @@ section li {
 
 section i {
   margin-right: 10px;
+  color: #007BFF; /* Blue icons */
 }
 
+/* Contact Form */
 form {
   display: flex;
   flex-direction: column;
@@ -91,7 +96,7 @@ form input,
 form textarea {
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #007BFF; /* Blue border */
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -99,7 +104,7 @@ form textarea {
 form button {
   padding: 12px 20px;
   font-size: 1.1rem;
-  background-color: #333;
+  background-color: #007BFF; /* Blue background */
   color: white;
   border: none;
   cursor: pointer;
@@ -107,13 +112,14 @@ form button {
 }
 
 form button:hover {
-  background-color: #555;
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #333;
+  background-color: #007BFF; /* Blue background */
   color: #fff;
 }
 
@@ -124,7 +130,7 @@ footer {
 }
 
 .dark-mode header {
-  background-color: #1e1e1e;
+  background-color: #0056b3; /* Darker blue in dark mode */
 }
 
 .dark-mode section {
@@ -162,4 +168,21 @@ footer {
 }
 #contact {
   animation-delay: 1.5s;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
 }
