@@ -49,19 +49,28 @@ nav .logo {
   font-size: 1.5rem;
 }
 
-nav .nav-links {
+#menu-toggle {
+  display: none; /* Hide by default */
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
 
-nav .nav-links a {
+.nav-links a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-nav .nav-links a:hover {
+.nav-links a:hover {
   color: #00bcd4;
 }
 
@@ -147,4 +156,39 @@ footer {
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block; /* Show hamburger menu */
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links by default */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show nav links when active */
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
