@@ -7,7 +7,72 @@ body {
     color: #333;
     overflow-x: hidden;
 }
+/* Header and Navigation */
+header {
+    background: #0073e6;
+    color: white;
+    padding: 1rem 0;
+    position: relative;
+}
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
+
+/* Logo Image */
+.logo-image {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Logo Text */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
 /* Header and Navigation */
 header {
     background: #0073e6;
