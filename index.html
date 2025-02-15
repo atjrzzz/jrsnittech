@@ -1,88 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- SEO Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IT Professional Portfolio - Technical Support, Networking, CCTV, Live Streaming">
-    <title>Jerson Jemenez - Portfolio</title>
+    <meta name="description" content="JRSN IT TECH offers professional IT services including computer hardware servicing, CCTV installation, Windows recovery, password resets, data retrieval, internet provider solutions, and Piso WiFi vendo machines. Trusted solutions for businesses and individuals.">
+    <meta name="keywords" content="IT services, computer repair, CCTV installation, Windows recovery, password reset, data retrieval, internet provider, Piso WiFi, vendo machine, IT support">
+    <meta name="author" content="JRSN IT TECH">
+    <meta property="og:title" content="JRSN IT TECH - Professional IT Solutions">
+    <meta property="og:description" content="Comprehensive IT services for businesses and individuals. Expert solutions in hardware servicing, CCTV design, data recovery, internet provider services, and Piso WiFi vendo machines.">
+    <meta property="og:image" content="https://yourwebsite.com/images/hero-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>JRSN IT TECH - Professional IT Solutions</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
 
-    <!-- LOADING ANIMATION -->
-    <div id="preloader"></div>
-
-    <!-- NAVIGATION -->
+    <!-- Header -->
     <header>
-        <h1>Jerson Jemenez</h1>
-        <button id="darkModeToggle">🌙</button>
+        <nav>
+            <div class="logo">JRSN IT TECH</div>
+            <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h2>IT Professional & Technical Support</h2>
-        <p>Expert in Networking, CCTV Installation, Live Streaming, and IT Solutions</p>
-        <a href="#contact" class="cta-button">Contact Me</a>
+    <!-- Side Navigation for Mobile -->
+    <div class="side-nav" id="sideNav">
+        <ul>
+            <li><a href="#home" onclick="closeNav()">Home</a></li>
+            <li><a href="#services" onclick="closeNav()">Services</a></li>
+            <li><a href="#about" onclick="closeNav()">About Us</a></li>
+            <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="closeNav()"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Your Trusted IT Solutions Partner</h1>
+        <p>Comprehensive IT services for businesses and individuals.</p>
+        <a href="#services">Explore Our Services</a>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Detail-oriented IT Professional with 2+ years of hands-on experience in technical support, network diagnostics, and live streaming operations.</p>
+    <!-- Image Animation Gallery -->
+    <section class="gallery">
+        <img src="images/gallery1.jpg" alt="Service Image 1">
+        <img src="images/gallery2.jpg" alt="Service Image 2">
+        <img src="images/gallery3.jpg" alt="Service Image 3">
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skill">
-            <p>Network Configuration</p>
-            <div class="progress"><span style="width: 90%"></span></div>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div>
+            <img src="images/hardware-icon.png" alt="Computer Hardware Servicing">
+            <h3>Computer Hardware Servicing</h3>
+            <p>We repair, upgrade, and maintain all types of computer hardware to ensure optimal performance.</p>
         </div>
-        <div class="skill">
-            <p>Live Streaming & Broadcast</p>
-            <div class="progress"><span style="width: 85%"></span></div>
+        <div>
+            <img src="images/cctv-icon.png" alt="CCTV Installation & Design">
+            <h3>CCTV Installation & Design</h3>
+            <p>State-of-the-art surveillance systems tailored to your security needs.</p>
         </div>
-        <div class="skill">
-            <p>CCTV Installation & Security</p>
-            <div class="progress"><span style="width: 80%"></span></div>
+        <div>
+            <img src="images/recovery-icon.png" alt="Windows Recovery & Data Retrieval">
+            <h3>Windows Recovery & Data Retrieval</h3>
+            <p>Password resets, system recovery, and secure data retrieval services.</p>
         </div>
-    </section>
-
-    <!-- PORTFOLIO SECTION -->
-    <section id="portfolio">
-        <h2>My Work</h2>
-        <div class="projects">
-            <div class="project">
-                <img src="background.jpg" alt="CCTV Installation">
-                <h3>CCTV Installation</h3>
-                <p>Implemented security surveillance systems across hospitals and schools.</p>
-            </div>
-            <div class="project">
-                <img src="background.jpg" alt="Live Streaming Setup">
-                <h3>Live Streaming</h3>
-                <p>Managed 1080p live streams for government events using OBS.</p>
-            </div>
+        <div>
+            <img src="images/internet-icon.png" alt="Internet Provider Services">
+            <h3>Internet Provider Services</h3>
+            <p>Reliable and high-speed internet solutions for homes and businesses.</p>
+        </div>
+        <div>
+            <img src="images/piso-wifi-icon.png" alt="Piso WiFi Vendo Machines">
+            <h3>Piso WiFi Vendo Machines</h3>
+            <p>Turnkey Piso WiFi solutions for entrepreneurs and small businesses.</p>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <img src="images/about-us.jpg" alt="About JRSN IT TECH">
+        <p>JRSN IT TECH is dedicated to delivering premium IT solutions with professionalism and expertise. Our team of certified technicians ensures your technology runs smoothly, securely, and efficiently. From hardware repairs to internet solutions, we’ve got you covered!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Jerson Jemenez | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
-        <button id="scrollToTop">⬆</button>
+        <p>&copy; 2023 JRSN IT TECH. All rights reserved.</p>
+        <p><a href="mailto:[Insert Email Address]">Email Us</a> | <a href="tel:[Insert Phone Number]">Call Us</a></p>
     </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
