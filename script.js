@@ -27,3 +27,16 @@ window.onclick = function(event) {
         event.target.style.display = "none";
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    header.style.opacity = '0';
+
+    header.addEventListener('mouseover', function() {
+        header.style.opacity = '1';
+    });
+
+    header.addEventListener('mouseout', function() {
+        header.style.opacity = '0';
+    });
+});

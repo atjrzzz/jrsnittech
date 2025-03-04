@@ -24,6 +24,12 @@ header {
     border-bottom: 1px solid #e1e4e8;
     padding: 1rem 0;
     position: relative;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+header:hover {
+    opacity: 1; /* Show on hover */
 }
 
 nav {
@@ -58,6 +64,12 @@ nav {
     font-size: 2rem;
     cursor: pointer;
     color: #ffffff;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+header:hover .menu-icon {
+    opacity: 1; /* Show on hover */
 }
 
 nav ul {
