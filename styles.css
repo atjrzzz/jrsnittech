@@ -323,6 +323,7 @@
         padding: 50px 20px; /* Padding */
         background: #111827; /* Background color */
         color: #ffffff; /* Text color */
+        border-radius: 20px;
     }
 
     .services h2 {
@@ -341,9 +342,10 @@
         width: 100%; /* Width */
         text-align: center; /* Center text */
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effect */
+        border-radius: 20px;
     }
 
-    .services div:hover {
+    .services img:hover {
         transform: translateY(-10px); /* Move up on hover */
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Box shadow on hover */
     }
