@@ -14,23 +14,21 @@ function closeNav() {
     overlay.classList.remove('active');
 }
 
+// Open Modal
 function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'flex';
 }
 
+// Close Modal
 function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-        event.target.style.display = "none";
-    }
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'none';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
-    header.style.opacity = '0';
+    header.style.opacity = '20';
 
     header.addEventListener('mouseover', function() {
         header.style.opacity = '1';
