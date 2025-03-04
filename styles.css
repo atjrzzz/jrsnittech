@@ -146,20 +146,28 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
-    background-color: #24292e;
+    position: relative;
     text-align: center;
     padding: 50px 20px;
     color: #ffffff;
+    overflow: hidden;
 }
+
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
     animation: fadeIn 2s ease-in-out;
+    position: relative;
+    z-index: 1;
 }
+
 .hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
 }
+
 .hero a {
     background-color: #0366d6;
     color: #ffffff;
@@ -167,9 +175,41 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
+
 .hero a:hover {
     background-color: #005bb5;
+}
+
+/* Gallery as Background */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/gallery1.png') no-repeat center center/cover;
+    opacity: 0.5;
+    z-index: 0;
+    animation: galleryBackground 12s infinite;
+}
+
+@keyframes galleryBackground {
+    0% {
+        background: url('images/gallery1.png') no-repeat center center/cover;
+    }
+    33% {
+        background: url('images/gallery2.png') no-repeat center center/cover;
+    }
+    66% {
+        background: url('images/gallery3.png') no-repeat center center/cover;
+    }
+    100% {
+        background: url('images/gallery1.png') no-repeat center center/cover;
+    }
 }
 
 /* Image Animation Gallery */
