@@ -367,13 +367,13 @@
     }
 
     .modal-content {
-        background-color: #ffffff; /* White background */
+        background-color:#111827; /* White background */
         padding: 20px; /* Padding */
-        border: 1px solid #e1e4e8; /* Border */
+        border: 1px solid #262728; /* Border */
         width: 100%; /* Width */
         max-width: 600px; /* Max width */
         border-radius: 10px; /* Rounded corners */
-        color: #24292e; /* Text color */
+        color: #fafbfc; /* Text color */
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Box shadow */
         text-align: center; /* Center text */
     }
@@ -397,6 +397,156 @@
         text-decoration: none; /* Remove underline */
         cursor: pointer; /* Pointer cursor */
     }
+
+    .form-container {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 2.5rem;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 500px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .form-container::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        transform: rotate(45deg);
+        pointer-events: none;
+    }
+
+    .form-title {
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        color: rgb(2, 2, 2);
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .form-input:focus {
+        outline: none;
+        border-color: var(--accent);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 15px rgba(236, 72, 153, 0.2);
+    }
+
+    .form-label {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        color: rgba(255, 254, 254, 0.997);
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .form-input:focus ~ .form-label,
+    .form-input:not(:placeholder-shown) ~ .form-label {
+        top: -0.6rem;
+        left: 0.8rem;
+        font-size: 0.8rem;
+        padding: 0 0.5rem;
+    }
+
+    .radio-group {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .radio-label {
+        display: flex;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+    }
+
+    .radio-input {
+        appearance: none;
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        margin-right: 0.5rem;
+       
+    }
+
+    .radio-input:checked {
+        border-color: var(--accent);
+        background: radial-gradient(var(--accent) 40%, transparent 50%);
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 1rem;
+        background: linear-gradient(45deg, var(--primary), var(--secondary));
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .submit-btn::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        transform: rotate(45deg);
+        transition: all 0.5s ease;
+    }
+
+    .submit-btn:hover::after {
+        left: 50%;
+        top: 50%;
+    }
+
+    @media (max-width: 768px) {
+        .form-container {
+            padding: 1.5rem;
+        }
+        
+        .form-title {
+            font-size: 2rem;
+        }
+    }
+
     /* Footer Styles */
     footer  {
         display: flex; /* Flexbox layout */
