@@ -139,7 +139,7 @@
         transition: background 0.3s ease; /* Transition effect */
     }
     .side-nav ul li a:hover {
-        background: #0366d6; /* Background color on hover */
+        background: #00ff6ed5; /* Background color on hover */
     }
 
     /* Overlay Styles */
@@ -164,7 +164,7 @@
         padding: 50px 20px; /* Padding */
         color: #ffffff; /* Text color */
         overflow: hidden; /* Hide overflow */
-        height: 450px;
+        height: 500px;
     }
 
     .hero h1 {
@@ -335,7 +335,7 @@
         width: 80px; /* Width */
         height: auto; /* Maintain aspect ratio */
         margin-bottom: 15px; /* Margin */
-        border-radius: 10px;
+        border-radius: 15px;
     }
 
     .services h3 {
