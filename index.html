@@ -39,8 +39,8 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0)" onclick="openModal('aboutModal')">About Us</a></li>
+            <li><a href="javascript:void(0)" onclick="openModal('contactModal')">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -50,8 +50,8 @@
         <ul>
             <li><a href="#home" onclick="closeNav()">Home</a></li>
             <li><a href="#services" onclick="closeNav()">Services</a></li>
-            <li><a href="#about" onclick="closeNav()">About Us</a></li>
-            <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+            <li><a href="javascript:void(0)" onclick="openModal('aboutModal')">About Us</a></li>
+            <li><a href="javascript:void(0)" onclick="openModal('contactModal')">Contact</a></li>
         </ul>
     </div>
 
@@ -102,23 +102,29 @@
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section class="about" id="about">
-        <h2>About Us</h2>
-        <img src="images/logo.jpg" alt="About JRSN IT TECH">
-        <p>JRSN IT TECH is dedicated to delivering premium IT solutions with professionalism and expertise. Our team of certified technicians ensures your technology runs smoothly, securely, and efficiently. From hardware repairs to internet solutions, we’ve got you covered!</p>
-    </section>
+    <!-- About Us Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('aboutModal')">&times;</span>
+            <h2>About Us</h2>
+            <img src="images/logo.jpg" alt="About JRSN IT TECH">
+            <p>JRSN IT TECH is dedicated to delivering premium IT solutions with professionalism and expertise. Our team of certified technicians ensures your technology runs smoothly, securely, and efficiently. From hardware repairs to internet solutions, we’ve got you covered!</p>
+        </div>
+    </div>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contactModal')">&times;</span>
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
