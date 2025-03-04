@@ -278,10 +278,8 @@ nav ul li a:hover {
     display: flex;
     overflow: hidden;
     position: relative;
-    height: 100%; /* Updated height */
+    height: 200px; /* Updated height */
     margin: 40px 0;
-    /* Remove animation */
-    /* animation: servicesSlideShow 20s infinite; */
 }
 
 .services div {
