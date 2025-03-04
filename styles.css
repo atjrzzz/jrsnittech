@@ -392,7 +392,7 @@
         color: #fafbfc; /* Text color */
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Box shadow */
         text-align: center; /* Center text */
-        font-size: 1rem;
+        font-size: 20PX;
     }
 
     .modal-content img {
