@@ -1,16 +1,27 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
     overflow-x: hidden;
 }
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Header and Navigation */
 header {
-    background: #161565;
-    color: #161565;
+    background-color: #000;
+    border-bottom: 1px solid #fff;
     padding: 1rem 0;
     position: relative;
 }
@@ -31,13 +42,15 @@ nav {
 
 /* Logo Image */
 .logo-image {
+    filter: grayscale(100%);
     width: 60px; /* Adjust size as needed */
     height: auto;
 }
 
 /* Logo Text */
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    margin-left: 10px;
     font-weight: bold;
 }
 
@@ -50,7 +63,11 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav ul li a {
@@ -112,13 +129,14 @@ nav ul li a:hover {
 
 /* Side Navigation for Mobile */
 .side-nav {
+    background-color: #000;
+    color: #fff;
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 250px;
     height: 100%;
-    background: #0073e6;
     z-index: 1000;
     padding-top: 60px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -145,13 +163,13 @@ nav ul li a:hover {
     background: #005bb5;
 }
 .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
 .overlay.active {
@@ -160,30 +178,29 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('images/hero-image.jpg') no-repeat center center/cover;
-    color: white;
+    background-color: #000;
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
 }
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5em;
     margin-bottom: 10px;
     animation: fadeIn 2s ease-in-out;
 }
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 .hero a {
-    background: #ff6f61;
-    color: white;
+    background-color: #fff;
+    color: #000;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 .hero a:hover {
-    background: #e53935;
+    background-color: #ccc;
 }
 
 /* Image Animation Gallery */
@@ -195,8 +212,9 @@ nav ul li a:hover {
     margin: 40px 0;
 }
 .gallery img {
+    filter: grayscale(100%);
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -237,16 +255,22 @@ nav ul li a:hover {
 
 /* Services Section */
 .services {
-    padding: 40px 20px;
+    background-color: #000;
+    padding: 50px 20px;
     text-align: center;
+}
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 .services div {
     margin-bottom: 20px;
     transition: transform 0.3s ease;
 }
 .services div img {
-    width: 100px;
-    height: auto;
+    filter: grayscale(100%);
+    width: 50px;
+    height: 50px;
     margin-bottom: 10px;
 }
 .services div:hover {
@@ -255,50 +279,66 @@ nav ul li a:hover {
 
 /* About Us Section */
 .about {
-    padding: 40px 20px;
+    background-color: #000;
+    padding: 50px 20px;
     text-align: center;
 }
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 .about img {
+    filter: grayscale(100%);
     max-width: 100%;
-    height: 40px;
+    height: auto;
     border-radius: 10px;
 }
 
 /* Contact Section */
 .contact {
-    padding: 40px 20px;
+    background-color: #000;
+    padding: 50px 20px;
     text-align: center;
 }
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 .contact input, .contact textarea {
-    width: 100%;
     padding: 10px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
     margin: 10px 0;
-    border: 1px solid #ccc;
     border-radius: 5px;
 }
 .contact button {
-    background: #0073e6;
-    color: white;
-    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 .contact button:hover {
-    background: #005bb5;
+    background-color: #ccc;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: white;
+    background-color: #000;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    border-top: 1px solid #fff;
 }
 footer a {
     color: #ff6f61;
     text-decoration: none;
+}
+footer p {
+    margin: 5px 0;
 }
 
 /* Animations */
