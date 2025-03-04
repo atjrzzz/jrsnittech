@@ -377,7 +377,6 @@
         width: 100%; /* Full width */
         overflow: auto; /* Scrollable */
         background-color: rgba(0, 0, 0, 0.8); /* Background color */
-        padding-top: 60px; /* Padding */
         display: flex; /* Flexbox layout */
         justify-content: center; /* Center horizontally */
         align-items: center; /* Center vertically */
