@@ -75,10 +75,13 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #ff6f61;
+    color: #000;
+    background-color: #fff;
 }
 
 /* Responsive Design */
