@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #000;
+    background-color: #111827;
     color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,7 +20,7 @@ a:hover {
 
 /* Header Styles */
 header {
-    background: linear-gradient(to right, #000, #fff);
+    background: linear-gradient(to right, #111827, #fff);
     border-bottom: 1px solid #fff;
     padding: 1rem 0;
     position: relative;
@@ -74,14 +74,15 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     padding: 10px 15px;
     border-radius: 5px;
+    background-color: #00ff70;
 }
 
 nav ul li a:hover {
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #e300ff;
 }
 
 /* Responsive Design */
@@ -96,7 +97,7 @@ nav ul li a:hover {
 
 /* Side Navigation Styles */
 .side-nav {
-    background-color: #000;
+    background-color: #111827;
     color: #fff;
     display: none;
     position: fixed;
@@ -147,7 +148,7 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
-    background-color: #000;
+    background-color: #111827;
     text-align: center;
     padding: 50px 20px;
 }
@@ -224,7 +225,7 @@ nav ul li a:hover {
 
 /* Services Section Styles */
 .services {
-    background-color: #000;
+    background-color: #111827;
     padding: 50px 20px;
     text-align: center;
 }
@@ -248,7 +249,7 @@ nav ul li a:hover {
 
 /* About Us Section Styles */
 .about {
-    background-color: #000;
+    background-color: #111827;
     padding: 50px 20px;
     text-align: center;
 }
@@ -265,7 +266,7 @@ nav ul li a:hover {
 
 /* Contact Section Styles */
 .contact {
-    background-color: #000;
+    background-color: #111827;
     padding: 50px 20px;
     text-align: center;
 }
@@ -281,7 +282,7 @@ nav ul li a:hover {
 .contact input, .contact textarea {
     padding: 10px;
     border: 1px solid #fff;
-    background-color: #000;
+    background-color: #111827;
     color: #fff;
     width: 100%;
     margin: 10px 0;
@@ -302,7 +303,7 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #000;
+    background-color: #111827;
     text-align: center;
     padding: 20px;
     border-top: 1px solid #fff;
