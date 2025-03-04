@@ -105,54 +105,18 @@
         </div>
     </div>
 
-    <!-- Contact Modal -->
+    <!-- Contact Us Modal -->
     <div id="contactModal" class="modal" style="display: none;">
-                <span class="close" onclick="closeModal('contactModal')">&times;</span>
-                <form class="adaptive-form">
-                    <div class="form-header">
-                        <h1 class="form-title">Universal Contact Form</h1>
-                        <p class="form-subtitle">Works seamlessly across all devices and platforms</p>
-                    </div>
-                    
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label class="form-label">First Name</label>
-                            <input type="text" class="form-input" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">Last Name</label>
-                            <input type="text" class="form-input" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">Email Address</label>
-                            <input type="email" class="form-input" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">Phone Number</label>
-                            <input type="tel" class="form-input" required>
-                        </div>
-                    </div>
-            
-                    <div class="form-group">
-                        <label class="form-label">Subject</label>
-                        <select class="form-input form-select" required>
-                            <option value="">Select a subject</option>
-                            <option>General Inquiry</option>
-                            <option>Technical Support</option>
-                            <option>Sales Questions</option>
-                        </select>
-                    </div>
-            
-                    <div class="form-group">
-                        <label class="form-label">Message</label>
-                        <textarea class="form-input" rows="4" required></textarea>
-                    </div>
-            
-                    <button type="submit" class="form-button">Send Message</button>
-                </form>
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contactModal')">&times;</span>
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </div>
 
     <!-- Footer -->

@@ -26,6 +26,16 @@ function closeModal(modalId) {
     modal.style.display = 'none';
 }
 
+// Open Contact Modal
+function openContactModal() {
+    openModal('contactModal');
+}
+
+// Close Contact Modal
+function closeContactModal() {
+    closeModal('contactModal');
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
     header.style.opacity = '20';
