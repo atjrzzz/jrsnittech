@@ -20,7 +20,7 @@ a:hover {
 
 /* Header Styles */
 header {
-    background: linear-gradient(to right, #111827, #fff);
+    background: #111827; /* Updated background color */
     border-bottom: 1px solid #fff;
     padding: 1rem 0;
     position: relative;
