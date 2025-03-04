@@ -272,21 +272,6 @@ nav ul li a:hover {
         opacity: 0;
     }
 }
-
-/* Services Section Styles */
-.services {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    height: 200px; /* Updated height */
-    margin: 40px 0;
-}
-
-.services div {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
 /* About Us Section Styles */
 .about {
     background-color: #ffffff;
@@ -418,4 +403,58 @@ footer p {
         font-size: 1.2rem;
     }
     
+}
+
+/* Services Section Styles */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.services div {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.services img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.services h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.services p {
+    font-size: 1em;
+    color: #dcdcdc;
 }
