@@ -335,7 +335,7 @@
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
     }
 
-    .services div: hover {
+    .services div:hover {
         background: #111827; /* Background color */
         padding: 20px; /* Padding */
         margin: 10px; /* Margin */
