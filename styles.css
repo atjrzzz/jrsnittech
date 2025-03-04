@@ -18,9 +18,9 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header and Navigation */
+/* Header Styles */
 header {
-    background-color: #000;
+    background: linear-gradient(to right, #000, #fff);
     border-bottom: 1px solid #fff;
     padding: 1rem 0;
     position: relative;
@@ -90,44 +90,8 @@ nav ul li a:hover {
         display: block;
     }
 }
-/* Header and Navigation */
-header {
-    background: #0073e6;
-    color: white;
-    padding: 1rem 0;
-    position: relative;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.menu-icon {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-nav ul li a:hover {
-    color: #ff6f61;
-}
 
-/* Side Navigation for Mobile */
+/* Side Navigation Styles */
 .side-nav {
     background-color: #000;
     color: #fff;
@@ -162,6 +126,8 @@ nav ul li a:hover {
 .side-nav ul li a:hover {
     background: #005bb5;
 }
+
+/* Overlay Styles */
 .overlay {
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
@@ -176,7 +142,7 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Hero Section */
+/* Hero Section Styles */
 .hero {
     background-color: #000;
     text-align: center;
@@ -253,7 +219,7 @@ nav ul li a:hover {
     }
 }
 
-/* Services Section */
+/* Services Section Styles */
 .services {
     background-color: #000;
     padding: 50px 20px;
@@ -277,7 +243,7 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* About Us Section */
+/* About Us Section Styles */
 .about {
     background-color: #000;
     padding: 50px 20px;
@@ -294,7 +260,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-/* Contact Section */
+/* Contact Section Styles */
 .contact {
     background-color: #000;
     padding: 50px 20px;
@@ -303,6 +269,11 @@ nav ul li a:hover {
 .contact h2 {
     font-size: 2em;
     margin-bottom: 20px;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .contact input, .contact textarea {
     padding: 10px;
@@ -326,7 +297,7 @@ nav ul li a:hover {
     background-color: #ccc;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
     background-color: #000;
     text-align: center;
