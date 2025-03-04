@@ -403,6 +403,7 @@
         padding: 2.5rem;
         border-radius: 20px;
         width: 100%;
+        max-width: 480px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.1);
         position: relative;
@@ -433,7 +434,7 @@
     }
 
     .form-input {
-        width: 100%;
+        width: 420px;
         padding: 1rem;
         background: rgba(255, 255, 255, 0.05);
         border: 2px solid rgba(255, 255, 255, 0.1);
