@@ -161,7 +161,7 @@ nav ul li a:hover {
     position: relative;
     text-align: center;
     padding: 50px 20px;
-    color: #ffffff;
+    color: #111114;
     overflow: hidden;
 }
 
@@ -246,10 +246,10 @@ nav ul li a:hover {
     animation-delay: 0s;
 }
 .gallery img:nth-child(2) {
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 .gallery img:nth-child(3) {
-    animation-delay: 8s;
+    animation-delay: 3s;
 }
 @keyframes slideShow {
     0% {
@@ -278,7 +278,7 @@ nav ul li a:hover {
     display: flex;
     overflow: hidden;
     position: relative;
-    height: 200px; /* Updated height */
+    height: 100%; /* Updated height */
     margin: 40px 0;
     /* Remove animation */
     /* animation: servicesSlideShow 20s infinite; */
@@ -419,7 +419,5 @@ footer p {
     .hero p {
         font-size: 1.2rem;
     }
-    .gallery {
-        height: 200px; /* Smaller height for mobile */
-    }
+    
 }
