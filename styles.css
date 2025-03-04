@@ -1,16 +1,16 @@
 /* General Styles */
 body {
-    background-color: #111827;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    background-color: #f6f8fa;
+    color: #24292e;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.5;
     overflow-x: hidden;
 }
 
 a {
-    color: #fff;
+    color: #0366d6;
     text-decoration: none;
 }
 
@@ -20,8 +20,8 @@ a:hover {
 
 /* Header Styles */
 header {
-    background: #111827; /* Updated background color */
-    border-bottom: 1px solid #fff;
+    background: #24292e;
+    border-bottom: 1px solid #e1e4e8;
     padding: 1rem 0;
     position: relative;
 }
@@ -42,15 +42,14 @@ nav {
 
 /* Logo Image */
 .logo-image {
-    filter: grayscale(100%);
-    width: 60px; /* Adjust size as needed */
+    width: 40px; /* Adjust size as needed */
     height: auto;
 }
 
 /* Logo Text */
 .logo {
-    font-size: 1.5em;
-    margin-left: 10px;
+    font-size: 1.25em;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -58,6 +57,7 @@ nav {
     display: none;
     font-size: 2rem;
     cursor: pointer;
+    color: #ffffff;
 }
 
 nav ul {
@@ -71,18 +71,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #00ff70;
 }
 
 nav ul li a:hover {
-    color: #fff;
-    background-color: #e300ff;
+    background-color: #0366d6;
 }
 
 /* Responsive Design */
@@ -97,8 +95,8 @@ nav ul li a:hover {
 
 /* Side Navigation Styles */
 .side-nav {
-    background-color: #111827;
-    color: #fff;
+    background-color: #24292e;
+    color: #ffffff;
     display: none;
     position: fixed;
     top: 0;
@@ -120,7 +118,7 @@ nav ul li a:hover {
     margin: 20px 0;
 }
 .side-nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px 20px;
@@ -128,7 +126,7 @@ nav ul li a:hover {
     transition: background 0.3s ease;
 }
 .side-nav ul li a:hover {
-    background: #005bb5;
+    background: #0366d6;
 }
 
 /* Overlay Styles */
@@ -148,9 +146,10 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
-    background-color: #111827;
+    background-color: #24292e;
     text-align: center;
     padding: 50px 20px;
+    color: #ffffff;
 }
 .hero h1 {
     font-size: 2.5em;
@@ -162,15 +161,15 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 .hero a {
-    background-color: #fff;
-    color: #000;
+    background-color: #0366d6;
+    color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 .hero a:hover {
-    background-color: #ccc;
+    background-color: #005bb5;
 }
 
 /* Image Animation Gallery */
@@ -182,7 +181,6 @@ nav ul li a:hover {
     margin: 40px 0;
 }
 .gallery img {
-    filter: grayscale(100%);
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -229,12 +227,12 @@ nav ul li a:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     text-align: center;
 }
 
 .services div {
-    background: #fff;
+    background: #f6f8fa;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -254,26 +252,26 @@ nav ul li a:hover {
 .services h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #333;
+    color: #24292e;
 }
 
 .services p {
     font-size: 1em;
-    color: #666;
+    color: #586069;
 }
 
 /* About Us Section Styles */
 .about {
-    background-color: #111827;
+    background-color: #ffffff;
     padding: 50px 20px;
     text-align: center;
 }
 .about h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #24292e;
 }
 .about img {
-    filter: grayscale(100%);
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -294,18 +292,18 @@ nav ul li a:hover {
 }
 
 .modal-content {
-    background-color: #111827;
+    background-color: #ffffff;
     margin: 5% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #e1e4e8;
     width: 80%;
     max-width: 600px;
     border-radius: 10px;
-    color: #fff;
+    color: #24292e;
 }
 
 .close {
-    color: #aaa;
+    color: #586069;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -313,20 +311,21 @@ nav ul li a:hover {
 
 .close:hover,
 .close:focus {
-    color: #fff;
+    color: #24292e;
     text-decoration: none;
     cursor: pointer;
 }
 
 /* Contact Section Styles */
 .contact {
-    background-color: #111827;
+    background-color: #ffffff;
     padding: 50px 20px;
     text-align: center;
 }
 .contact h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #24292e;
 }
 .contact form {
     display: flex;
@@ -335,16 +334,16 @@ nav ul li a:hover {
 }
 .contact input, .contact textarea {
     padding: 10px;
-    border: 1px solid #fff;
-    background-color: #111827;
-    color: #fff;
+    border: 1px solid #e1e4e8;
+    background-color: #ffffff;
+    color: #24292e;
     width: 100%;
     margin: 10px 0;
     border-radius: 5px;
 }
 .contact button {
-    background-color: #fff;
-    color: #000;
+    background-color: #0366d6;
+    color: #ffffff;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -352,18 +351,18 @@ nav ul li a:hover {
     transition: background 0.3s ease;
 }
 .contact button:hover {
-    background-color: #ccc;
+    background-color: #005bb5;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #111827;
+    background-color: #24292e;
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #e1e4e8;
 }
 footer a {
-    color: #ff6f61;
+    color: #0366d6;
     text-decoration: none;
 }
 footer p {
