@@ -335,7 +335,7 @@
         width: 80px; /* Width */
         height: auto; /* Maintain aspect ratio */
         margin-bottom: 15px; /* Margin */
-        border-radius: 15px;
+        border-radius: 20px;
     }
 
     .services h3 {
