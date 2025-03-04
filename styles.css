@@ -226,7 +226,7 @@ nav ul li a:hover {
     display: flex;
     overflow: hidden;
     position: relative;
-    height: 300px; /* Adjust height as needed */
+    height: 200px; /* Updated height */
     margin: 40px 0;
     animation: servicesSlideShow 20s infinite;
 }
