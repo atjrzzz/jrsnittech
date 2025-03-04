@@ -107,50 +107,52 @@
 
     <!-- Contact Modal -->
     <div id="contactModal" class="modal" style="display: none;">
-            <div class="form-container">
                 <span class="close" onclick="closeModal('contactModal')">&times;</span>
-                <h2 class="form-title">Contact Us</h2>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-input" placeholder=" " required>
-                        <label class="form-label">Full Name</label>
+                <form class="adaptive-form">
+                    <div class="form-header">
+                        <h1 class="form-title">Universal Contact Form</h1>
+                        <p class="form-subtitle">Works seamlessly across all devices and platforms</p>
                     </div>
-        
-                    <div class="form-group">
-                        <input type="email" class="form-input" placeholder=" " required>
-                        <label class="form-label">Email Address</label>
-                    </div>
-        
-                    <div class="form-group">
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-input" required>
+                        </div>
                         
-                        <select class="form-input" required>
-                            <label class="form-label">Subject</label>
-                            <option value="" disabled selected> </option>
-                            <option value="1">General Inquiry</option>
-                            <option value="2">Technical Support</option>
-                            <option value="3">Feedback</option>
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-input" required>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label class="form-label">Subject</label>
+                        <select class="form-input form-select" required>
+                            <option value="">Select a subject</option>
+                            <option>General Inquiry</option>
+                            <option>Technical Support</option>
+                            <option>Sales Questions</option>
                         </select>
                     </div>
-        
+            
                     <div class="form-group">
-                        <textarea class="form-input" placeholder=" " rows="4" required></textarea>
                         <label class="form-label">Message</label>
+                        <textarea class="form-input" rows="4" required></textarea>
                     </div>
-        
-                    <div class="radio-group">
-                        <label class="radio-label">
-                            <input type="radio" name="priority" class="radio-input" required>
-                            Low Priority
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="priority" class="radio-input">
-                            High Priority
-                        </label>
-                    </div>
-        
-                    <button type="submit" class="submit-btn">Send Message</button>
+            
+                    <button type="submit" class="form-button">Send Message</button>
                 </form>
-            </div>
     </div>
 
     <!-- Footer -->
